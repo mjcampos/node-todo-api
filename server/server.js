@@ -24,3 +24,7 @@ app.post('/todos', (req, res) => {
 app.listen(8888, () => {
 	console.log("Starting server");
 });
+
+module.exports = {
+	app
+};
