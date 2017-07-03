@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ToDo API</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<h1>Index Page</h1>
+	{{#if todos.length}}
+		<table>
+			{{#each todos}}
+				<tr>
+					<td>{{this._id}}</td>
+					<td>{{this.text}}</td>
+				</tr>
+			{{/each}}
+		</table>
+	{{/if}}
+</body>
+</html>
